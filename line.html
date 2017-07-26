@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width,user-scalable=no" name="viewport">
+    <title>首页</title>
+    <!--触摸屏效果滑动组件end-->
+</head>
+
+
+<body>
+<canvas id="canvas"></canvas>
+<script>
+    window.onload = function () {
+        var canvas = document.getElementById('canvas');
+        var context = canvas.getContext('2d');
+        canvas.width = 800;
+        canvas.height = 800;
+
+//        context.beginPath();
+//        context.moveTo(100, 100);
+//        context.lineTo(400, 400);
+//        context.lineTo(100, 400);
+//        context.lineTo(100, 100);
+//        context.strokeStyle = 'red';
+//        context.lineWidth = 5;
+//        context.stroke();
+//        context.closePath();
+//
+//        context.beginPath();
+//        context.moveTo(200, 100);
+//        context.lineTo(700, 600);
+//        context.lineTo(200, 600);
+//        context.lineTo(200, 100);
+//        context.strokeStyle = 'black';
+//        context.lineWidth = 5;
+//        context.stroke();
+//        context.closePath();
+
+        context.arc(300, 300, 200, 0, 0.5 * Math.PI);
+        context.strokeStyle = 'black';
+        context.lineWidth = 5;
+        context.stroke();
+
+    }
+</script>
+
+</body>
+</html>
